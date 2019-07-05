@@ -1,7 +1,16 @@
 public class DiscountSample {
 
     public static void main(String[] args) {
-        // TODO 自動生成されたメソッド・スタブ
+
+        DiscountSample ds = new DiscountSample();
+        boolean rtn = ds.priceCheck(5000);
+
+        if(rtn == true) {
+            System.out.println("割引対象です!!");
+        }else{
+            System.out.println("割引対象外です!!");
+        }
+
     }
 
     public boolean priceCheck(int price) {
@@ -22,7 +31,7 @@ public class DiscountSample {
         }
     }
 
-    public int ageCheck(int age){
+    public int ageCheck(int age) {
         if (age < 20) {
             // 未成年なら3,000円引き
             return 3000;
